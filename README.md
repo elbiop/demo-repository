@@ -4,7 +4,7 @@ start date: 11/17/2022
 
 the extension of README.md stands for markdown
 <p>
-#### git commands:
+# git commands:
 <ul>
     <li><pre>init  : converts a directory into a new repository
             $ git init</pre></li>
@@ -30,4 +30,8 @@ the extension of README.md stands for markdown
 </p>
 # Establishing connection with git-hub  
 To establish comunination between GitHub and your local repository trugh git
-you neeed to download git credential manager 
+you neeed to download git credential manager
+
+# branching
+A branch is a tracking workflow preceding the main or "master" branch
+The workflow is the same for each branch but no branch can see the changes done to the other branches
