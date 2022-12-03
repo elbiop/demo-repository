@@ -53,6 +53,9 @@ The workflow is the same for each branch but no branch can see the changes done
 to the other branches it is usefull for traking multiple teams working on about
 single project.
 
+branches should be as brief as possible since the <b>MERGING</b> process can and
+will generate conflicts that have to be manually resolved.
+
 <p>
 <ul>
     <li><pre>branch : </pre></li>
@@ -68,12 +71,20 @@ single project.
         beffore committing        
         $git diff issue-1237-bugfix
             in this case it shows the differences between this branch and "main"</pre></li>
+    <li><pre>merge : merges a branch to the parent.
+        $git merge "master" meges the current branch to the "master" branch.
+        
     <li><pre>branch -d: deletes a branch</pre></li>
 </ul>
 <p>
 <pre>*** Important: when typing the name of a branch you can hit the TAB key to 
 autocomplete
 
+</pre>
+
+
+
+<pre>
 Once you have PUSHED a branch it will appear in GitHub then you need to compare
 using the <b><i>COMPARE AND PULL REQUEST</i></b> button on the left. Then list alll the
 changes made in the <b><i>LEAVE A COMMENT</i></b> section.
@@ -88,7 +99,8 @@ the conversation before the you kill the branch by pressing <b><i>MERGE PULL REQ
 The final step is to make a <b><i>$git pull origin master</i></b> to update your local
 repository.
 
-to delete a branch type: <strong><i>$git branch -d "branch name"</i></strong>
+Finally you can delete a branch once the branch is merged using the button
+<b><i>DELETE BRANCH</i></b>
 
 <h3>Merge conflicts</h3>
 When the same file is being edited by multiple branches or people GitHub will
