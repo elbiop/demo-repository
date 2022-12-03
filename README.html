@@ -15,19 +15,22 @@ the extension of README.md stands for markdown
             $ git remote add master "git@github.com:example/remote-repository.git</pre></li>
     <li><pre>clone : brings a repository hosted online to local computer
             $ git clone github.com:elbiop/demo-repo.git</pre></li>
+    <li><pre>status: gives information about untracked changes</pre></li>
     <li><pre>add   : begin to track a file in git that isn't being tracked
             $ git add filename.ext
             $ git add . # reack all files</pre></li>
     <li><pre>commit: save your files changes in git
             $ git commit -m "Reasosn for the changes or descriprion"</pre></li>
+            if the files have only the status of <b><i>"Modified"</i></b> they can be added
+            and commited in the same command:
+                $git commit -am "message or comment"
     <li><pre>push  : upload changes to the remote repository
             $ git push origin "repository name"
                 in order to avoid writing "origin master" a default upstream
-                option ( -u ) can be set
+                option ( -u is shorthand for --set-upsetream ) can be set
             $ git push -u origin master
                 the subsequent pushes only "$ git push" will need to be written</pre></li>           
     <li><pre>pull  : download changes from remote repo to local machine</pre></li>
-    <li><pre>status: gives information about untracked changes</pre></li>
     <li><pre>gitignore: specifies which files should't be tracked</pre></li>
     <li><pre></pre></li>
 </ul>
@@ -55,12 +58,35 @@ single project.
             switches to "main" branch</pre></li>
     <li><pre>diff   : Shows the difference between child and mother branches
         beffore committing        
-        $git issue-1237-bugfix
+        $git diff issue-1237-bugfix
             in this case it shows the differences between this branch and "main"</pre></li>
     <li><pre></pre></li>
 </ul>
 <p>
-*** Important: when typing the name of a branch you can hit the TAB key to autocomplete
+<pre>*** Important: when typing the name of a branch you can hit the TAB key to 
+autocomplete
+
+Once you have PUSHED a branch it will appear in GitHub then you need to compare
+using the <b><i>COMPARE AND PULL REQUEST</i></b> button on the left. Then list alll the
+changes made in the <b><i>LEAVE A COMMENT</i></b> section.
+then click <b><i>CREATE PULL REQUEST</i></b> to merge the branch into it's parent.
+
+You can comment the code using the <b><i>FILES</i></b> tab, and this will create the
+option for resolving issues and making aclarandums by initiating a conversation.
+
+if someone has initated a conversation using comments you might have to resolve
+the conversation before the you kill the branch by pressing <b><i>MERGE PULL REQUEST</i></b>
+
+The final step is to make a <b><i>$git pull origin master</i></b> to update your local
+repository.
+
+to delete a branch type: <strong><i>$git branch -d "branch name"</i></strong>
+
+<h3>Merge conflicts</h3>
+When the same file is being edited by multiple branches or people GitHub will
+detect a conflict, since it can't decide which update to accept then a manual
+conflict resolution has to be performed.
+</pre>
 </p>
 
 <p>
