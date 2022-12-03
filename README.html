@@ -31,6 +31,11 @@ the extension of README.md stands for markdown
             $ git push -u origin master
                 the subsequent pushes only "$ git push" will need to be written</pre></li>           
     <li><pre>pull  : download changes from remote repo to local machine</pre></li>
+    <li><pre>rm : removes files and directories from git tracking.
+            $git rm "filename" untrack single file
+            $git rm -r untracks an entire directory
+            ***warning it does not delete the files, only will disappear from the
+               remote viewing and editing of the repository***</pre></li>
     <li><pre>gitignore: specifies which files should't be tracked</pre></li>
     <li><pre></pre></li>
 </ul>
@@ -50,7 +55,10 @@ single project.
 
 <p>
 <ul>
-    <li><pre>branch : shows all branches including master</pre></li>
+    <li><pre>branch : </pre></li>
+            $git branch
+                shows all branches including master.
+            $git branch -d "branch name" deletes the branch.
     <li><pre>checkout: creates a new branch or switch between branches
         $git checkout -b issue-1237-bugfix
             this line will create a branch (-b) named issue-1237-bugfix
@@ -60,7 +68,7 @@ single project.
         beffore committing        
         $git diff issue-1237-bugfix
             in this case it shows the differences between this branch and "main"</pre></li>
-    <li><pre></pre></li>
+    <li><pre>branch -d: deletes a branch</pre></li>
 </ul>
 <p>
 <pre>*** Important: when typing the name of a branch you can hit the TAB key to 
