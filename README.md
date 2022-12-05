@@ -53,3 +53,4 @@ it is usefull for traking multiple teams working on a single project.
     <li><pre></pre></li>
 </ul>
 <p>
+***Important: when typing the name of a branch you can hit the TAB key to autocomplete 

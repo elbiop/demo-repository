@@ -86,7 +86,6 @@ will generate conflicts that have to be manually resolved.
         in this case it shows the differences between this branch and "main"</pre></li>
     <li><pre><b>merge :</b> merges a branch to the parent.
     <b>$git merge "master"</b> merges the current branch to the "master" branch.
-    </pre></li>
 </ul>
 <p>
 <pre>*** Important: when typing the name of a branch you can hit the TAB key to 
@@ -124,9 +123,15 @@ checkout to the "Main" branch.
 $git merge "branch-name" then resolve the conflicts if any.
 $git branch -d "branch-name" deletes the branch once it is fully merged.</pre>
 </p>
-
+<h3>Unstaging and Undoing</h3>
 <p>
 <ul>
-    <li><pre></li></pre>
+    <li><pre><b>reset :</b>Unstages or reverse aditions/commits when Some unwanted changes 
+    have ocurred
+    <b>$git reset "**pointer**"</b>
+        Reverse any commits staged after the "**pointer**" this pointer is the hash
+        number for that commit and can be found using <b> $git log </b>. A special
+        pointer is the word "HEAD" which points to the last commit submitted
+        </li></pre>
 </ul>
 </p>
